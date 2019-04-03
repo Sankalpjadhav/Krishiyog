@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<?php
+session_start();
+if(!isset($_SESSION['login_user']));
+  //header("Location: login.php");//redirect to login page to secure the welcome page without login access.
+
+?>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="http://www.krishiyog.com/images/logo0.jpg" type="image/x-icon" />
+
+	<title>Krishiyog Naturals &mdash;Seed to wellness</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="	We are India’s first and foremost platform for natural farming. We are community of natural farmers engaged in growing, producing and processing natural produce and products.  Our community objectives are to empower farmers and enrich lives by improving health and nutrition of every Indian. We are a community of responsible farmers guided by Padma Shri Subhash Palekarji who has pioneered the technique of “Zero Budget Natural Farming”. Today, on the occasion of India’s 72nd Independence Day Celebration 2018 with his guidance, direction and blessing we dedicate Krishiyog Digital Platform to one and all.
+" />
+	<meta name="keywords" content="farmers,e-commerce,shop,discussion forum,Natural farming, ZBNF, natural products,retail" />
+	<!--<meta name="author" content="" />-->
+
+
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123909367-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123909367-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123990231-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123990231-1');
+</script>
+
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<style type="text/css">
+
+
+	</style>
+	</head>
+	<body>
+
+<!-- NAV bar -->
+<!--	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="gtco-logo"><a href="index.php"><img src="images/logo0.jpg" style="max-width:300px;max-height: 100px;margin-top:-15px;margin-left:-30px"/></a></div>
+				</div>
+				<div class="col-xs-10 text-center menu-1">
+					<ul>
+
+					<span class="icon">
+						<li><a class="active" href="index.php"><i class="icon-home"></i></a></li>
+					</span>
+						<li><a href="about.php"><b>About</a></b></li>
+						<li><a class="nat-farm" href="#NaturalFarming"><b>Natural Farming</a></b></li>
+						<li><a href="resource.php"><b>Resources</a></b></li>
+            <li><a href="contact.php"><b>Contact us</a></b></li>
+
+            <li class="has-dropdown">
+              <a ><b>Account</b></a>
+              <ul class="dropdown">
+								<li><?php
+
+								if(!isset($_SESSION['login_user']) && !isset($_SESSION['category']))
+											{
+												echo "<li><a href='login.php'><b>LOGIN</b></a></li>";
+												echo "<li><a href='signup2.php'><b>REGISTER</b></a></li>";
+											}
+										  if(isset($_SESSION['login_user']) && isset($_SESSION['category']))
+											{
+												echo "<li><a><b>Welcome ".$_SESSION['fname']."</b></a></li>";
+												if($_SESSION['category']=='aggregator' || $_SESSION['category']=='buyerdb'||$_SESSION['category']=='communorg'||$_SESSION['category']=='medexpertdb')
+													echo "<li><a href='enquiry.php'><b>Enquiry<b></a></li>";
+												if($_SESSION['category']=='sellerdb')
+													echo "<li><a href='Yashseller.php'><b>Enquiry</b></a></li>";
+												echo "<li><a href='logout.php' ><b>Logout</b></a></li>";
+
+											}
+								?></li>
+              </ul>
+            </li>
+
+
+ 					</ul>
+			</div>
+		</div>
+	</nav>
+-->
+
+  <div class="container" style="background-color : grey;">
+
+    <div class="row">
+
+      <div class="col-md-10">
+
+
+
+      </div>
+
+      <div>
+        <h1>buyer1</h1>
+
+
+      </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- countTo -->
+		<script src="js/jquery.countTo.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/magnific-popup-options.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
+
+		</body>
+	</html>
